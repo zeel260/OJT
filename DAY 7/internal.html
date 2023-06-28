@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <script type="text/javascript">
+     function demointernalalert()
+     {
+        alert("internal alert");
+     }
+     function demointernalconfirm()
+     {
+        if(confirm("are you sure...??")){
+            alert("yes");
+        }
+        else{
+            alert
+            ("noooo");
+        }
+    }
+     function demointernalprompt(){
+        var fname=prompt("enter firstname here...");
+        var iname=prompt("enter lastname..");
+        alert(fname+" "+iname);
+     }
+    </script>
+    <style>
+        body{background-color: rgb(0, 183, 255);}
+        div{background-color: rgb(0, 255, 238);height: 300px;width: 300px;}
+    </style>
+</head>
+<body>
+    
+  <div id="d1">
+   hello student
+  </div> 
+  <hr>
+  <input type="button" value="alert inline" onclick="alert('hello' )"/>
+  <input type="button" value="conform inline" onclick="confirm('are you sure....?')"/>
+  <input type="button" value="prompt inline" onclick="prompt('enter ')"/>
+  <hr>
+  <input type="button" value="alert internal" onclick="demointernalalert()"/>
+  <input type="button" value="conform internal" onclick="demointernalconfirm()"/>
+  <input type="button" value="prompt internal" onclick="demointernalprompt()"/>
+</body>
+</html>
